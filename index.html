@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link href="./css/styles.css" type="text/css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+        <script src="./js/tree.js"></script>
+        <script src="./js/dataload.js"></script>
+        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <title>Evie's organism classifier</title>
+    <style>
+    body { font-family:'Roboto';background-color: #f2f2f2;}
+    h1 { margin:150px auto 50px auto; text-align:center;}
+    </style>
+    </head>
+    <body>
+    <h1>Evie's organism classifier</h1><br />
+    <div style="text-align:center"><h2><a href="javascript:void(0)" onclick="window.location.reload()">Start Over</a></h2></div><br />
+    
+        <div class="main"></div>
+    <script type="text/javascript">
+var data = window.dataload;
+
+$(document).ready(function() {
+    $('.main').decisionTree({data: data});
+});
+</script>
+
+</body>
+</html>
