@@ -67,7 +67,7 @@
         if (id != 'dctree-first') {
             var controls = $('<div></div>').addClass('dctree-controls col-md-12');
             controls.append($('<a href="javascript:void(0);" class="dctree-prev">< Back</a>'));
-            container.append(controls);
+            container.prepend(controls);
         }
         
         elem.append(container);
